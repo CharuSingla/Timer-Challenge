@@ -30,4 +30,5 @@ const ResultModal = forwardRef(function ResultModal ({targetTime, remainingTime,
   );
 });
 // Closes the dialog when button is clicked, without using any extra JavaScript.
+
 export default ResultModal;

@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom'
 const ResultModal = forwardRef(function ResultModal ({targetTime, remainingTime, onReset}, ref) { // forwardRef is used to forward refs to child components 
   // The ref prop is used to forward the ref to the dialog element
   const dialog = useRef(); // useRef is used to create a reference to the dialog element
-
+  
   const userLost = remainingTime <= 0;
   const formattedRemainingTime = (remainingTime / 1000).toFixed(2); // 2 decimal places
   const score = Math.round((1 - remainingTime / (targetTime * 1000)) * 100);
